@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 onclick="console.log('34')">Ajke Dom Spacial Day</h1>
+    <button onclick="console.log(33)">Click Me</button>
+    <button onclick="console.log(6767)">My Clicked</button>
+    <br>
+    <button onclick="document.body.style.backgroundColor='red'">Click</button>
+    <button onclick="makeRed()">Click 1</button>
+    <button id="make-purple">Click 2</button>
+    <button id="make-gray">Click 4</button>
+    <button id="make-green">Click 5</button>
+    <button id="make-goldenrod">Click 6</button>
+    <script src="js/event.js"></script>
+    <script>
+        const makePink = document.getElementById('make-pink');
+        makePink.addEventListener = ('click', makrPink)
+        function makrPink() {
+            document.body.style.backgroundColor = 'pink'
+        }
+        
+        // Addvanced Fainal
+        const makeGreen = document.getElementById('make-green');
+        makeGreen.addEventListener('click', function makeGreens() {
+            document.body.style.backgroundColor = 'green'
+        })
+
+
+        document.getElementById('make-goldenrod').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'green'
+        })
+
+    </script>
+
+</body>
+
+</html>

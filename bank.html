@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Let's get some Mooney !!!</title>
+
+</head>
+
+<body>
+    <header>
+        <main>
+            <h1 class="text-center font-bold text-[40px] mt-4">Let's get some Mooney !!!</h1>
+            <section class="bg-emerald-200 mt-4 p-8 mx-[220px] rounded">
+                <div class="grid grid-cols-3 gap-6 justify-center mt-10">
+                    <!-- card 1 -->
+                    <div class="bg-amber-200 px-20 py-7 rounded">
+                        <h1 class="text-2xl font-semibold text-white">Deposit</h1>
+                        <h1 class="text-3xl font-semibold text-white">$ <span id="deposit-mooney">0</span></h1>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="bg-red-300 px-20 py-7 rounded">
+                        <h1 class="text-2xl font-semibold text-white">Withdraw</h1>
+                        <h1 class="text-3xl font-semibold text-white">$ <span id="withdraw-money">00</span></h1>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="bg-lime-200 px-20 py-7 rounded">
+                        <h1 class="text-2xl font-semibold text-white">Balance</h1>
+                        <h1 class="font-semibold text-white text-3xl">$ <span id="balance-feild">1235</span></h1>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 mx-auto justify-center text-center mt-10 gap-6">
+                    <!-- Deposit Feild -->
+                    <section class="bg-violet-300  p-8 rounded">
+                        <h1 class="text-2xl font-bold text-start text-white">Please Deposit</h1>
+                        <div class="mt-6">
+                            <input class="block w-[300px] p-1 rounded " type="text" name="" id="user-deposit"
+                                placeholder="$ Ammount you Want To Deposit">
+                            <button id="deposit"
+                                class="bg-blue-400 mt-3 rounded mr-[330px] px-7 py-3 font-semibold hover:bg-yellow-200 text-white">Deposit</button>
+                        </div>
+                    </section>
+                    <!-- Withdraw Feild -->
+                    <section class="bg-cyan-300  p-8 rounded">
+                        <h1 class="text-2xl font-bold text-start text-white">Please Withdraw</h1>
+                        <div class="mt-6">
+                            <input class="block w-[300px] p-1 rounded " type="text" name="" id="user-withdraw"
+                                placeholder="$ Ammount you Want To Withdraw">
+                            <button id="Withdraw"
+                                class="bg-green-400 mt-3 mr-[330px] rounded px-7 py-3 font-semibold hover:bg-yellow-200 text-white">Withdraw</button>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </header>
+    <script src="deposit.js"></script>
+</body>
+
+</html>

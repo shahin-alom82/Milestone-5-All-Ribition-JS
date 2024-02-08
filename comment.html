@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reacap website</title>
+</head>
+
+<body>
+    <h1>Md Shahin Alom</h1>
+    <div id="comment-container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti omnis commodi tempora ad nemo magni id
+            blanditiis inventore nostrum accusamus, ab eum. Deleniti aliquam hic ad harum consectetur tempore accusamus.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti omnis commodi tempora ad nemo magni id
+            blanditiis inventore nostrum accusamus, ab eum. Deleniti aliquam hic ad harum consectetur tempore accusamus.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti omnis commodi tempora ad nemo magni id
+            blanditiis inventore nostrum accusamus, ab eum. Deleniti aliquam hic ad harum consectetur tempore accusamus.
+        </p>
+    </div>
+    <div>
+        <textarea name="" id="comment-btn" cols="60" rows="7">
+        </textarea>
+        <br>
+        <button id="Post-btn">Post</button>
+    </div>
+    <script>
+
+        // document.getElementById('new-btn').addEventListener('click', function () {
+        //     const newBtn = document.getElementById('new-comment');
+        //     const newBtns = newBtn.value;
+
+
+        //     const commentContainer = document.getElementById('comment-container');
+        //     const p = document.createElement('p');
+        //     p.innerText = newBtns;
+        //     commentContainer.appendChild(p)
+        //     newBtn.value = '';
+        // })
+
+        document.getElementById('Post-btn').addEventListener('click', function () {
+            const commentBtn = document.getElementById('comment-btn');
+            const commentBtns = commentBtn.value;
+            
+            const commentContainer = document.getElementById('comment-container');
+            const p = document.createElement('p');
+            p.innerText = commentBtns;
+            commentContainer.appendChild(p)
+            commentBtn.value = '';
+        })
+        
+    </script>
+</body>
+
+</html>

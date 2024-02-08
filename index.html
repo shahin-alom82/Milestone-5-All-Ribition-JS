@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document Object Model</title>
+    <style>
+        ul {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Md Shahin Alom</h1>
+        <h1>ssssssssssssss</h1>
+    </header>
+    <main>
+        <ul>
+            <li>Shahin</li>
+            <li>Yeasin</li>
+            <li>Mafous</li>
+            <li>Rahim</li>
+        </ul>
+        <section>
+            <h1>eeeeeee</h1>
+            <h1>eeeeeee</h1>
+            <h1>eeeeeee</h1>
+            <h1>eeeeeee</h1>
+        </section>
+        <section>
+            <h1>eeeeeee</h1>
+            <h1>eeeeeee</h1>
+            <h1>eeeeeee</h1>
+            <h1>eeeeeee</h1>
+        </section>
+        <section>
+            <h1>eeeeeee</h1>
+            <h1>eeeeeee</h1>
+            <h1>eeeeeee</h1>
+            <h1>eeeeeee</h1>
+        </section>
+        <section id="style">
+            <h1>eeeeeee</h1>
+            <h1>eeeeeee</h1>
+            <h1>eeeeeee</h1>
+            <h1>eeeeeee</h1>
+        </section>
+    </main>
+
+
+    <script src="js/dom.js"></script>
+
+
+    <script>
+
+
+        const liCollection = document.getElementsByTagName('li')
+        for (const li of liCollection) {
+            // console.log(li.innerText)
+        }
+        const tag = document.getElementsByTagName('h1')
+        for (const h1 of tag) {
+            // console.log(h1.innerText)
+        }
+
+
+        const section = document.querySelectorAll('section')
+        for (const sections of section) {
+            sections.style.border = '2px solid red';
+            sections.style.borderRadius = '12px';
+            sections.style.paddingLeft = '12px';
+            sections.style.marginBottom = '14px';
+            sections.style.listStyle = 'none';
+            sections.style.backgroundColor = 'gray'
+        }
+
+        const listStyles = document.getElementById('style')
+        listStyles.style.backgroundColor = 'red'
+        // for(const style of listStyles){
+        //     style.style.backgroundColor = 'red'
+        // }
+
+    </script>
+</body>
+
+</html>
