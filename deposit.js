@@ -119,6 +119,18 @@ document.getElementById('Withdraw').addEventListener('click', function () {
     const withdrawValueString = withdrawValue.innerText;
     const withdraw = parseFloat(withdrawValueString)
 
+    
+
+    const withdrawTotalBalance = windrawInputValue + withdraw;
+    withdrawValue.innerText = withdrawTotalBalance;
+
+    // Balance Feild
+    const balanceFeilds = document.getElementById('balance-feild');
+    const balanceFeildStrings = balanceFeilds.innerText;
+    const balances = parseFloat(balanceFeildStrings);
+
+    const ammount = balances - windrawInputValue;
+    balanceFeilds.innerText = ammount;
 
     // if (windrawInputValue > withdraw) {
     //     Swal.fire({
@@ -128,22 +140,9 @@ document.getElementById('Withdraw').addEventListener('click', function () {
     //     });
     //     return;
     // }
-    const withdrawTotalBalance = windrawInputValue + withdraw;
-    withdrawValue.innerText = withdrawTotalBalance;
-
-
-
-    // Balance Feild
-    const balanceFeilds = document.getElementById('balance-feild');
-    const balanceFeildStrings = balanceFeilds.innerText;
-    const balances = parseFloat(balanceFeildStrings);
-
-
-    const ammount = balances - windrawInputValue;
-    balanceFeilds.innerText = ammount;
-
-
 
     withdrawInputFeild.value = '';
 
 })
+
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Geometry Genius</title>
+</head>
+
+<body>
+    <header>
+        <!-- Card Contaoner -->
+        <main>
+
+            <h1 class="text-center text-[45px] mt-5 font-bold">Geometry Genius </h1>
+
+            <div class="grid lg:grid-cols-4 md:grid-cols-1 gap-10 mx-[100px] mt-10">
+
+                <div class="col-span-3 gap-10 grid lg:grid-cols-3 md:grid-cols-1 ">
+
+                    <!-- Cart 1 -->
+                    <div class="bg-lime-100 rounded">
+                        <img class="h-52 w-[310px]" src="images/triangle.png" alt="">
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-xl font-semibold" id="triangle-show">Triangle</h2>
+                            <p>Area : (A) = <span id="triangleArea"></span></p>
+                            <div class="flex gap-2 mt-4">
+                                <input class="p-1 w-28" type="text" name="" id="triangleBase" placeholder="b">
+                                <input class="p-1 w-28" type="text" name="" id="triangleHeight" placeholder="h">
+                            </div>
+                            <div class="card-actions justify-end mt-3">
+                                <button onclick="triangleCalculation()"
+                                    class="bg-blue-600 text-center px-24 py-3 rounded mt-3 font-semibold text-white">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cart 2 -->
+                    <div class="bg-lime-100 rounded">
+                        <img class="h-52" src="images/rectangle.png" alt="">
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title font-semibold text-xl" id="rectangle-shows">Rectangle</h2>
+                            <p class="mt-2">Area (A) = <span id="rectangle-show"></span></p>
+                            <div class="flex gap-2 mt-4">
+                                <input class="p-1 w-28" type="text" name="" id="Wedth" placeholder="W">
+                                <input class="p-1 w-28" type="text" name="" id="length" placeholder="l">
+                            </div>
+                            <div class="card-actions justify-end mt-3">
+                                <button onclick="rectangle()"
+                                    class="bg-blue-600 text-center px-24 py-3 rounded mt-3 font-semibold text-white">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cart 3 -->
+                    <div class="bg-lime-100 rounded">
+                        <img class="h-52" src="images/parallelogram.png" alt="">
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title font-semibold text-xl" id="area-gram">Parallelogram</h2>
+                            <p class="mt-2">Area (A) = <span id="area-create"></span></p>
+                            <div class="flex gap-2 mt-4">
+                                <input class="p-1 w-28" type="text" name="" id="gram-base" placeholder="b">
+                                <input class="p-1 w-28" type="text" name="" id="gram-height" placeholder="h">
+                            </div>
+                            <div class="card-actions justify-end mt-3">
+                                <button onclick="parallelogram()"
+                                    class="bg-blue-600 text-center px-24 py-3 rounded mt-3 font-semibold text-white">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cart 4 -->
+                    <div class="bg-lime-100 rounded">
+                        <img class="h-52 w-[310px]" src="images/rhombus.png" alt="">
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title font-semibold text-xl" id="area-rhombus">Rhombus</h2>
+                            <p class="mt-2">Area (A) = <span id="rhombus-create"></span></p>
+                            <div class="flex gap-2 mt-4">
+                                <input class="p-1 w-28" type="text" name="" id="rhombus-base1" placeholder="d">
+                                <input class="p-1 w-28" type="text" name="" id="rhombus-base2" placeholder="d">
+                            </div>
+                            <div class="card-actions justify-end mt-3">
+                                <button onclick="rhombus()"
+                                    class="bg-blue-600 text-center px-24 py-3 rounded mt-3 font-semibold text-white">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cart 5 -->
+                    <div class="bg-lime-100 rounded">
+                        <img class="h-52 w-[310px]" src="images/pentagon.png" alt="">
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title font-semibold text-xl">Pentagon</h2>
+                            <p class="mt-2">Area (A) = 0.5 * p * b</p>
+                            <div class="flex gap-2 mt-4">
+                                <input class="p-1 w-28" type="text" name="" id="" placeholder="p">
+                                <input class="p-1 w-28" type="text" name="" id="" placeholder="b">
+                            </div>
+                            <div class="card-actions justify-end mt-3">
+                                <button
+                                    class="bg-blue-600 text-center px-24 py-3 rounded mt-3 font-semibold text-white">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cart 6 -->
+                    <div class="bg-lime-100 rounded">
+                        <img class="h-52" src="images/ellipse.png" alt="">
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title font-semibold text-xl">Ellipse</h2>
+                            <p class="mt-2">Area (A) = ab</p>
+                            <div class="flex gap-2 mt-4">
+                                <input class="p-1 w-28" type="text" name="" id="" placeholder="a">
+                                <input class="p-1 w-28" type="text" name="" id="" placeholder="b">
+                            </div>
+                            <div class="card-actions justify-end mt-3">
+                                <button
+                                    class="bg-blue-600 text-center px-24 py-3 rounded mt-3 font-semibold text-white">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-span-1 bg-slate-300 rounded ">
+                    <h1 class="text-center text-3xl font-semibold mt-2 underline">Area Calculation</h1>
+                    <div id="container" class="p-4 text-xl py-5">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </main>
+    </header>
+
+    <script src="geometry.js"></script>
+
+</body>
+
+</html>
